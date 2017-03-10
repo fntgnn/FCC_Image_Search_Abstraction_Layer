@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body class="container">
+    <h1><a id="Image_Search_Abstraction_Layer_0"></a>Image Search Abstraction Layer</h1>
+<p>Free Code Camp challenge: <a href="https://www.freecodecamp.com/challenges/image-search-abstraction-layer">https://www.freecodecamp.com/challenges/image-search-abstraction-layer</a></p>
+<h2><a id="Getting_Started_4"></a>Getting Started</h2>
+<p>Use the command <code>npm install</code> to install all the packages.</p>
+<p>I also used <code>dotenv</code> so you have to create a <code>.env</code>file and store the variables:</p>
+<ul>
+<li>DB_URI: your mongodb database</li>
+<li>API_KEY: your API KEY from Google</li>
+<li>CX: your Google Custom Search Engine: <a href="https://developers.google.com/custom-search/">https://developers.google.com/custom-search/</a></li>
+</ul>
+<h3><a id="User_stories_13"></a>User stories</h3>
+<ul>
+<li>I can use <code>/imagesearch/cats</code> for search 10 cats image</li>
+<li>I can use <code>/imagesearch/cats?offset=10</code> for search 10 cats image with an offset of 10.</li>
+<li>I can see the latest search in <code>/latest</code></li>
+</ul>
+<h4><a id="Example_usage_19"></a>Example usage</h4>
+<pre><code>https://fntgnn-fcc-image-search.herokuapp.com/imagesearch/cats
+</code></pre>
+<p>Example creation output:</p>
+<pre><code>[{
+url: &quot;https://upload.wikimedia.org/wikipedia/commons/1/1a/Cat_crying_(Lolcat).jpg&quot;,
+snippet: &quot;Lolcat - Wikipedia&quot;,
+thumbnail: &quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhYHRZ-aoumwW08SSvzu9xXEvuZX9yxaeYs1wQiw_ZYizo8uZvxtQs69Xj&quot;,
+context: &quot;https://en.wikipedia.org/wiki/Lolcat&quot;
+},
+...
+]
+</code></pre>
+<h5><a id="Usage_36"></a>Usage</h5>
+<pre><code>https://fntgnn-fcc-image-search.herokuapp.com/imagesearch/cats
+https://fntgnn-fcc-image-search.herokuapp.com/imagesearch/cats?offset=2
+</code></pre>
+<p>Or:</p>
+<pre><code>https://fntgnn-fcc-image-search.herokuapp.com/latest
+</code></pre>
+<h2><a id="Built_With_46"></a>Built With</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/express-generator">Express generator</a> - The web framework used</li>
+<li><a href="http://twitter.github.io/hogan.js/">Hogan.js</a> - Template for the views</li>
+<li><a href="https://www.npmjs.com/package/axios">Axios</a> - Promise based HTTP client for the browser and node.js</li>
+<li><a href="https://www.npmjs.com/package/dotenv">dot-env</a> - package for loading environment variables from a .env variable</li>
+</ul>
+<h2><a id="Author_54"></a>Author</h2>
+<ul>
+<li><strong>Giovanni Fontana</strong></li>
+</ul>
+
+
+
+  </body>
+</html>
